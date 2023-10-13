@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html class="fixed-background">
+
+
+<!----------------------------------head------->
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css"> 
+        <!--<script src="/preload.js"></script>-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style> body {
+            background-image: none;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;  } 
+            
+        </style>   
+    </head>
+
+<!------------------------------------main body---------------------->
+    <body>
+        
+        <div class="overlay"><div class="loading-message">Loading...</div>  </div>  
+    
+          
+
+            
+             
+<!------------------------------------Menu--------------------->
+            <div id="menu-overlay" onclick="toggleMenuOff()"></div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div id="menu-container" class="hidden">
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="certificates.html" class="menu-item">Certificates</a>
+                <a href="contact.html" class="menu-item">Contact Me</a>
+           
+            </div>
+   
+<!-------------------------------------------------------------------->
+            
+            <div class="full-viewport-container">
+                <!--animated text-->
+                <p class="animated-title" aria-label="Hi, I'm  Rishabh"></p>
+                
+                <!--<button onclick="replay()" class="button-replay">Replay</button>-->
+                <div class="intro-glitch">
+                <p class="animated-paragraph">There is no greater work than to build machines that go to space</p>
+                <p class="animated-paragraph">To explore and expand our understanding of the universe is the ultimate endeavor</p>
+                <p class="animated-paragraph">I am a space enthusiast, engineer and a computer programmer</p>
+                <p class="animated-paragraph">Join me on a journey through my projects</p>
+                <br><br>
+                <p class="animated-paragraph" style="font-weight: bold;">Push to Explore</p>
+                </div>
+                
+
+                
+                <a id="scroll-button" href="#work-box" class="scroll-button"></a>
+         
+
+            </div>
+
+            <div class="my_work_cont">
+                <div class="text-box" id="work-box"><h1 class="logo"> MY WORK</h1> </div>
+            </div>   
+            
+           
+        <div class="container" id="rocketContainer" style="background-color: rgba(218, 60, 60, 0);">
+            
+<!--------------------------------Posts------------------------------>
+            
+            <!--CubeSat-->
+            <div class="container">
+                <div class="inner-container">
+                    <h1 class="date">December 2022</h1>
+                    <h1 class="animated_subheading">1U CUBESAT</h1>
+                    <p class="posts">After years of ignoring my destiny, I finally answered my calling. Started my journey to the space by joining STAR and
+                        building a cube satellite from scratch</p>
+                    <a href="cubeSat.html" class="second-inner-container"><img src="images/polarix.png",alt="polarix"></a>
+                    <a href="cubeSat.html" class="full-story">Full Story</a>
+                </div>
+            </div>
+            <br><br>
+
+            <!----gui---->
+            <div class="container">
+                <div class="inner-container">
+                    <h1 class="date">December 2022</h1>
+                    <h1 class="animated_subheading2">SATELLITE TELEMETRY DISPLAY</h1>
+                    <p class="posts">The real-time graphical representation for 3D visualisation of the motion of the CubeSat</p>
+  
+                        <a href="gui.html"  class="second-inner-container"><img src="images/gui2.png"></a>
+                  
+                    <a href="gui.html"  class="full-story">Full Story</a>
+                </div>
+            </div>
+            <br><br>
+            
+            <!-- Publications-->
+          
+            <div id="publications" class="container">
+                <h1 class="animated_subheading" style="margin-top: 70px;">PUBLICATIONS</h1>
+                <p class="posts" style="padding-bottom: 10;">My journey led me towards research</p>
+
+                <div id="container-divide" style="width:100%; display: flex; flex-direction: row; justify-content: center;
+                         align-items: center; ">
+                   
+                    <div style="width: 45%; margin-right: 16px; display: flex; justify-content: center; flex-direction: column; ">
+                        <h1 class="date" style="padding-top: 20px;">October 2023</h1> 
+                        <p class="posts"> SYNTHETIC APERTURE RADAR PAYLOAD ON A NANOSATELLITE</p>
+                      
+                        <a href="sar.html"  id="image-container"><img src="images/sar1.png"></a>
+                       
+                        <div style="display: flex; justify-content: center; margin-top: 20px;">
+                            <a href="sar.html" class="full-story">Full Story</a>
+                        </div>
+                    </div>
+              
+
+               
+                    <div style="width: 45%; margin-left: 16px;margin-bottom: 0px; display: flex; justify-content: center; flex-direction: column">
+                        <h1 class="date" style="padding-top: 20px;">Ongoing</h1> 
+                        <p class="posts">SATELLITE STRUCTURE TO STUDY<br>ENCELADUS </p>
+
+                        <a href="enceladus.html" targrt="_blank" id="image-container"><img src="images/Enceladus1.png"></a>
+
+                        <div style="display: flex; justify-content: center; margin-top: 20px;">
+                            <a href="enceladus.html" class="full-story">Full Story</a>
+                        </div>                      
+                    </div>
+                  
+                </div>
+            </div>
+            
+
+             <!-- Publications mobile -->
+             <div id="publications-mobile" class="container">
+                <div class="inner-container">
+                    <h1 class="animated_subheading" style="margin-top: 15px;">PUBLICATIONS</h1>
+                    <p class="posts" style="padding-bottom: 10;">My journey led me toward research</p>
+
+                    <h1 class="date" style="margin-bottom: 10px;">October 2023</h1> 
+                    <p class="posts"> SYNTHETIC APERTURE RADAR PAYLOAD ON A NANOSATELLITE</p>
+                    <a href="sar.html"  class="second-inner-container"><img src="images/sar1.png"></a>
+                    <a href="sar.html"  class="full-story">Full Story</a>
+
+                    <h1 class="date" style="margin-bottom: 10px;">Ongoing</h1> 
+                    <p class="posts">SATELLITE STRUCTURE TO STUDY<br>ENCELADUS </p>
+                    <a href="enceladus.html"  class="second-inner-container"><img src="images/Enceladus1.png"></a>
+                    <a href="enceladus.html"  class="full-story">Full Story</a>
+
+
+
+                </div>
+            </div>
+            <br><br>
+            <!------APCP----->
+            <div class="container">
+                <h1 class="date">June 2023</h1>
+                <h1 class="animated_subheading2" style="margin-top: 0px;">Research Project</h1>
+                <p class="posts" style=" margin-top: 0px;">Let's Tackle Rocket Propellant!</p>
+                <br>
+                <p class="posts2">Comparative Analysis of Grain Design in Ammonium Perchlorate 
+                    Composite Propellant (APCP): A Study on Performance 
+                    Characteristics
+                </p>
+                <div id="container-divide" style="width:100%; display: flex; flex-direction: row; justify-content: center;
+                align-items: center;">
+                    <div id="apcp-r">
+                        
+                        <a href="apcp.html"  id="image-container"><img src="images/Apcp1.png"></a>
+                    </div>
+
+                    <div id='apcp-l'>
+                        <a href="apcp.html"  id="image-container"><img src="images/Apcp3.png"></a> 
+                    </div>
+                </div> 
+                <a href="apcp.html" class="full-story" style="margin-top: 20px;">Full Story</a>   
+                
+                   
+                        
+                                                  
+                    
+
+                
+            </div>
+            <br><br>
+
+             <!--Project Exodus-->
+             <div class="container">
+                <div class="inner-container">
+                    <h1 class="date">July 2023</h1>
+                    <h1 class="animated_subheading2">Project Exodus</h1>
+                    <p class="posts">Proposed concept to use starship to save the human race</p>
+                    <a href="exodus.html"  class="second-inner-container"><img src="images/Exodus.png"></a> 
+                    <a href="exodus.html" class="full-story">Full Story</a>
+                </div>
+            </div>
+            <br><br>
+          
+            <!--AR/VR games----->
+            <div class="container">
+              
+            <div class="inner-container">
+                <h1 class="animated_subheading2 sub3">Immersive Technologies</h1>
+                <h1 class="posts2">In addition, I develop AR/VR gaming experiences</h1>
+
+                    <a href="unity.html" class="second-inner-container"><img src="images/unity.png"></a>
+               
+                <a href="unity.html" class="full-story">Full Story</a>
+            </div>
+            </div>
+            <br><br> <br><br>
+
+         
+<!--------------------------------------Launch Button------------------------------->
+
+            <div id="rocket-launch" style="width: 90%; height: 500px;background-color: rgba(165, 106, 106, 0) ">
+                <!--row1-->
+                <div style="width: 100%; height: 65%; display: flex;background-color: rgba(184, 255, 42, 0)">
+                    <!--c11-->
+                    <div style="width: 60%; height: 100%; background-color: rgba(43, 50, 186, 0); display: flex; justify-content: center; align-items: center;">
+                        <h1 class="animated_subheading" id="headingText" style="padding-bottom: 0; 
+                        padding-top: 0; color: rgb(255, 255, 255);">
+                        Wanna see<br>someting<br>cool?<br>
+                    </h1></div>
+          
+                </div>
+                <!--row2-->
+                <div style="width:100%; height: 10%; display: flex; justify-content: center; align-items: center;">
+                    <div style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);display: flex; justify-content: center; align-items: center;">
+                        <h1 id="launchText" style="font-size: 70px;
+                            font-weight: bold;
+                            margin-bottom: 3em;
+                            font-family: 'Share Tech Mono', monospace;
+                            color: rgb(255, 255, 255);display: none;">Launched!</h1>
+                        </div>
+              
+                </div>
+                <!--row3-->
+                <div style="width: 100%; height: 20%; display: flex; background-color: rgba(138, 197, 145, 0)">
+                     <!--c31-->
+                    <div style="width: 60%; height: 100%; background-color: rgba(0, 0, 0, 0);display: flex; justify-content: center; align-items: center;"> 
+                        <button class="big-button" onclick="startCountdown()">Launch Rocket</button>
+                        <div id="countdown" style="display:none;">
+                            <h1 id="countdownTimer"></h1>
+                        </div>
+                    </div>
+      
+                </div>
+            </div>
+
+            <!-------Contact me
+            <div class="container">
+                <div class="inner-container" style="height: 100px; justify-content: center;">
+                    <a href="contact.html" class="contact-me">Contact me</a>
+                </div>
+            </div>
+            -->
+
+           
+            
+            <footer>
+                <div class="footer">
+                    <div style='height: 100%; width: 60%; background-color: rgba(0, 255, 255, 0); display: flex; flex-direction: row; align-items: center; margin-left: 30px;'>
+                        <a href="index.html" class="myfooter">Home</a>
+                        <h1 class="footerspace">|</h1>
+                        <a href="contact.html" class="myfooter">Contact</a>
+                        <h1 class="footerspace">|</h1>
+                        <!--<a href="certificates.html" class="myfooter">Certificates</a>-->
+                 
+
+               
+                    </div>
+                    <div style='height: 100%; width: 40%; background-color: rgba(21, 255, 0, 0);display: flex; flex-direction: row; align-items: center; margin-right: 10px; justify-content: flex-end;'>
+                        <h1 class ="myfooter_">© 2023 Rishabh Maurya</h1>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        
+
+        <script src="script.js"></script>   
+    </body>
+
+    
+</html>
